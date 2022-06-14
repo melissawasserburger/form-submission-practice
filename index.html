@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Submission</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        main button {
+            width: 100px;
+        }
+        .form-types {
+            margin: 10px 10px;
+        }
+        .form-types input {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="form-types">
+            <label for="name">Your Name:</label>
+            <input id="name" type="text" name="name"/>
+        </div>
+        <div class="form-types">
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email"/>
+        </div>
+        <div class="form-types">
+            <label for="text-box">Additional Comments:</label>
+            <textarea
+            id="text-box"
+            name="message"
+            maxlength="200"
+            placeholder=""
+            ></textarea>
+        </div>
+        <button type="submit">Submit Form</button>
+    </main>
+</body>
+</html>
